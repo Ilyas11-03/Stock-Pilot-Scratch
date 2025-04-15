@@ -1,0 +1,16 @@
+# La directive FROM est utilisée pour spécifier l'image de base à partir de laquelle construire l'image Docker.
+# Chaque Dockerfile doit commencer par une instruction FROM.
+# Exemple : FROM php:7.4-apache
+
+FROM node:22
+
+# La directive WORKDIR est utilisée pour définir le répertoire de travail pour les instructions RUN, CMD, ENTRYPOINT, COPY et ADD suivantes.
+# Si le répertoire n'existe pas, il sera créé.
+WORKDIR /app
+
+# La directive RUN est utilisée pour exécuter des commandes dans l'image Docker pendant le processus de construction.
+# Ici, nous utilisons RUN pour installer les dépendances npm.
+RUN npm install 
+
+#On va copier tous les modules de node_modules
+COPY ..
