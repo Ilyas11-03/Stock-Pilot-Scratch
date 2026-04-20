@@ -8,6 +8,7 @@ import { FaBuilding, FaLayerGroup, FaLocationArrow, FaMap, FaMapMarkedAlt, FaMap
 import { PieChartLabels } from './RosenChart';
 
 const Dashboard: React.FC = () => {
+  
   const [societes, setSocietes] = useState<Societe[]>([]);
   const [sites, setSites] = useState<Site[]>([]);
   const [zones, setZones] = useState<Zone[]>([]);

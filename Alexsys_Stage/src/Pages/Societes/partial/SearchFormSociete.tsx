@@ -6,12 +6,13 @@ interface SearchFormSocieteProps {
     societes: Societe[];
     onSocieteAdded: (newSociete: Societe) => void;
     onSearchTermChange: (searchTerm: string) => void;
-}
+} 
 
 const SearchFormSociete: React.FC<SearchFormSocieteProps> = ({ onSocieteAdded, onSearchTermChange}) => {
+    
     const [searchTerm, setSearchTerm] = useState('');
 
-    const handleSearchChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const handleSearchChange = (e: React.ChangeEvent<HTMLInputElement>) => { // Gérer le changement dans le champ de recherche
         const term = e.target.value;
         setSearchTerm(term) // Mettre à jour le terme de recherche
         onSearchTermChange(term) // Appeler la fonction parent pour mettre à jour le terme de recherche
