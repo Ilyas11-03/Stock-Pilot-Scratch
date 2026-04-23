@@ -2,7 +2,7 @@
 
 A modern, full-featured inventory management application built with **React 18**, **TypeScript**, **Vite**, and **Tailwind CSS**. This application provides comprehensive management for warehouse inventory, storage infrastructure, and organizational hierarchy.
 
-## 📋 Project Overview
+## Project Overview
 
 **AlexSys Stage** is an enterprise-level warehouse management system designed to manage:
 - Companies (Sociétés)
@@ -15,7 +15,7 @@ A modern, full-featured inventory management application built with **React 18**
 
 ---
 
-## 🏗️ Architecture Overview
+## Architecture Overview
 
 ### Technology Stack
 - **Frontend Framework**: React 18.3.1
@@ -32,7 +32,7 @@ A modern, full-featured inventory management application built with **React 18**
 
 ---
 
-## 📁 Directory Structure
+## Directory Structure
 
 ```
 src/
@@ -124,7 +124,7 @@ src/
 
 ---
 
-## 🗂️ Architecture Patterns
+## Architecture Patterns
 
 ### 1. **Module-Based Organization**
 Each feature (Societes, Sites, Zones, etc.) is a self-contained module:
@@ -163,7 +163,7 @@ App (Root)
 
 ---
 
-## 🔄 Data Flow
+## Data Flow
 
 ### Page Module Data Flow
 ```
@@ -195,7 +195,7 @@ SocietesTable.tsx
 
 ---
 
-## 📡 API Integration
+## API Integration
 
 **Base URL**: `https://stockpiloteapi-d8cwagb0hfhzfyau.eastus2-01.azurewebsites.net/api`
 
@@ -210,7 +210,7 @@ Each module has its endpoint:
 
 ---
 
-## 🔐 Authentication
+## Authentication
 
 - Located in `Login/` module
 - Uses Context API (Currently disabled/commented in `AuthContext.tsx`)
@@ -219,7 +219,7 @@ Each module has its endpoint:
 
 ---
 
-## 🎨 UI/UX Features
+## UI/UX Features
 
 - **Dark/Light Mode Support**: Tailwind CSS theming
 - **Responsive Design**: Mobile-first with Tailwind
@@ -232,7 +232,7 @@ Each module has its endpoint:
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 - Node.js 18+
@@ -269,7 +269,7 @@ Tests the production build locally
 
 ---
 
-## 🏭 Production Deployment
+## Production Deployment
 
 ### Docker
 ```bash
@@ -287,7 +287,7 @@ See `DOCKER_CICD_SETUP.md` for complete Docker & CI/CD setup.
 
 ---
 
-## 📦 Key Dependencies
+## Key Dependencies
 
 | Package | Purpose |
 |---------|---------|
@@ -304,7 +304,7 @@ See `DOCKER_CICD_SETUP.md` for complete Docker & CI/CD setup.
 
 ---
 
-## 🔧 Configuration Files
+## Configuration Files
 
 - `tsconfig.json` - TypeScript configuration
 - `vite.config.ts` - Vite build configuration
@@ -316,7 +316,7 @@ See `DOCKER_CICD_SETUP.md` for complete Docker & CI/CD setup.
 
 ---
 
-## 🐛 Troubleshooting
+## Troubleshooting
 
 ### Port already in use?
 ```bash
@@ -336,7 +336,7 @@ npx tsc --noEmit
 
 ---
 
-## 📝 Code Standards
+## Code Standards
 
 - **Language**: TypeScript (strict mode)
 - **Framework**: React with Hooks
@@ -347,7 +347,7 @@ npx tsc --noEmit
 
 ---
 
-## 🚀 Future Enhancements
+## Future Enhancements
 
 - [ ] Implement React Context Auth (currently commented)
 - [ ] Add unit and integration tests
@@ -359,7 +359,7 @@ npx tsc --noEmit
 
 ---
 
-## 📞 Support
+## Support
 
 For issues or questions, refer to the official documentation:
 - [React Documentation](https://react.dev)
